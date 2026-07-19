@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Ocean World</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<style>
+  .safari-slide {
+    height: 400px;
+  }
+
+  .slide-forest {
+    background-color:rgb(0, 42, 255);
+    background-size: cover;
+  }
+  .slide-ocean {
+    background-color:rgb(0, 255, 102);
+    background-size: cover;
+  }
+  .slide-desert {
+    background-color:rgb(255, 255, 0);
+    background-size: cover;
+  }
+</style>
+
+</head>
+<body>
+<div id="safariCarousel" class="carousel slide"
+     data-ride="carousel">
+<ol class="carousel-indicators">
+  <li data-target="#safariCarousel" data-slide-to="0" class="active"></li>
+  <li data-target="#safariCarousel" data-slide-to="1"></li>
+  <li data-target="#safariCarousel" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+  <div class="carousel-item active safari-slide slide-forest">
+   <h1>Forest Safari</h1>
+   <p>Explore the lush greenery and diverse wildlife of the forest.
+    There are many species of animals and plants to discover in the forest.
+   </p>
+  </div>
+  <div class="carousel-item safari-slide slide-ocean">
+    <h1>Ocean Safari</h1>
+    <p>Dive into the depths of the ocean and encounter marine life
+    There are many species of marine animals to discover in the ocean.
+    </p>
+  </div>
+  <div class="carousel-item safari-slide slide-desert">
+    <h1>Desert Safari</h1>
+    <p>Experience the vastness and unique ecosystem of the desert
+    There are many species of animals and plants to discover in the desert.
+    </p>
+  </div>
+</div>
+</div>
+<a class="carousel-control-prev" href="#safariCarousel"
+   data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#safariCarousel"
+   data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</a>
+
+<body data-spy="scroll" data-target="#safariNav" data-offset="60">
+
+<nav id="safariNav" class="navbar navbar-dark bg-dark sticky-top">
+
+  <span class="navbar-brand">Safari Guide</span>
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="#forest">Forest</a></li>
+    <li class="nav-item"><a class="nav-link" href="#ocean">Ocean</a></li>
+    <li class="nav-item"><a class="nav-link" href="#desert">Desert</a></li>
+  </ul>
+</nav>
+<div id="forest" class="section"> There are many species of animals and plants to discover in the forest. </div>
+<div id="ocean"  class="section"> There are many species of marine animals to discover in the ocean. </div>
+<div id="desert" class="section"> There are many species of animals and plants to discover in the desert. </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
